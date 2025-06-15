@@ -7,4 +7,13 @@
   font-size: to-rem(26);
   padding: to-rem(20) to-rem(42);
   border-radius: to-rem(10);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:active{
+  color:$bgColor;
+    background-color: $activeColor;
+}
+
 }

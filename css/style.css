@@ -129,6 +129,7 @@ h1 {
 .info-header {
   padding-top: 9.625rem;
   padding-bottom: 20.375rem;
+  border: 1px solid black;
 }
 
 .nav {
@@ -290,6 +291,13 @@ h1 {
   font-size: 1.625rem;
   padding: 1.25rem 2.625rem;
   border-radius: 0.625rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.info-header__button:active {
+  color: #DF803E;
+  background-color: #cdc3c3;
 }
 
 /*# sourceMappingURL=style.css.map */
