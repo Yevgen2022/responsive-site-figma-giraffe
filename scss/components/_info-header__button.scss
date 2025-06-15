@@ -1,0 +1,10 @@
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+
+.info-header__button{
+  background-color: $bgSecondColor;
+  font-size: to-rem(26);
+  padding: to-rem(20) to-rem(42);
+  border-radius: to-rem(10);
+}

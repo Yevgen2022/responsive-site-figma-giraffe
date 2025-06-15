@@ -285,4 +285,11 @@ h1 {
   margin: 1.5rem 0 5.6875rem 0;
 }
 
+.info-header__button {
+  background-color: #FFFFFF;
+  font-size: 1.625rem;
+  padding: 1.25rem 2.625rem;
+  border-radius: 0.625rem;
+}
+
 /*# sourceMappingURL=style.css.map */
