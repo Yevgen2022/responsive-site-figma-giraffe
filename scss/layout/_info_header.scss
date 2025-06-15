@@ -1,0 +1,8 @@
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+
+.info-header{
+  padding-top: to_rem(154) ;
+  padding-bottom: to_rem(326) ;
+}

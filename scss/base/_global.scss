@@ -50,3 +50,8 @@ a {
 a, button, .nav__item, .btn, [role="button"] {
   transition: $transition-hover;
 }
+
+h1{
+font-family: $font-base-desktop;
+  font-size: to-rem(90);
+}

@@ -117,8 +117,18 @@ a, button, .nav__item, .btn, [role=button] {
   transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
 }
 
+h1 {
+  font-family: "LibreBaskerville", sans;
+  font-size: 5.625rem;
+}
+
 .hero-section {
   position: relative;
+}
+
+.info-header {
+  padding-top: 9.625rem;
+  padding-bottom: 20.375rem;
 }
 
 .nav {
@@ -266,6 +276,13 @@ a, button, .nav__item, .btn, [role=button] {
   top: 7.0625rem;
   width: 120rem;
   z-index: 100;
+}
+
+.info-header__description {
+  font-size: 3.125rem;
+  line-height: 130%;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+  margin: 1.5rem 0 5.6875rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
