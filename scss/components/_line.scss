@@ -1,0 +1,13 @@
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+
+
+.wrapper__line {
+  border-bottom: 1px solid #FFFFFF;
+  position: absolute;
+  left: 0;
+  top: to-rem(113);
+  width:to-rem($maxWidth);
+  z-index: 100;
+}

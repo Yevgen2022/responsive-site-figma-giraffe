@@ -10,6 +10,7 @@
   //min-width: #{$minWidth}px; // додати мінімальну ширину
   margin: 0 auto;
   background-color: $bgColor;
+  position: relative;
 }
 
 .bounding-box{
