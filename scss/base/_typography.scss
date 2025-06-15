@@ -1,0 +1,11 @@
+
+@import '../abstracts/variables';
+
+body {
+  min-width: #{$minWidth}px;             //мінімальна ширина сторінки
+  color: $mainFontColor;                //колір шрифту за замовчуванням
+  font-family:$font-base-desktop;
+  font-size: #{$baseFontSize}px;      // 1 rem
+  line-height: 1.6;
+  background-color: $bgSecondColor;
+}

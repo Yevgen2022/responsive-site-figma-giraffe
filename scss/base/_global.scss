@@ -1,0 +1,51 @@
+
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  max-width: to-rem($maxWidth);
+  //min-width: #{$minWidth}px; // додати мінімальну ширину
+  margin: 0 auto;
+  background-color: $bgColor;
+}
+
+.bounding-box{
+  max-width: to-rem($maxWidthContainer);
+  //min-width: #{$minWidth}px; // додати мінімальну ширину
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  //position: relative;
+  //border-bottom: 2px solid white;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main {
+  flex: 1;
+}
+
+.footer {
+  border: 2px solid black;
+}
+
+a {
+  &:hover{
+    text-decoration: underline;
+    color: $bgSecondColor;
+  }
+}
+
+// Global transition
+a, button, .nav__item, .btn, [role="button"] {
+  transition: $transition-hover;
+}

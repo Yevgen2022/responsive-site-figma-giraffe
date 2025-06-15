@@ -1,0 +1,52 @@
+
+
+$font-base-desktop: 'LibreBaskerville', sans;
+$font-base-mobile: 'Roboto', sans;
+
+
+$baseFontSize: 16;  // 1 rem
+
+//Основні кольори
+$bgColor: #DF803E;
+$bgSecondColor: #FFFFFF;
+$mainFontColor: #000000;//колір шрифту за замовчуванням
+
+//мінімальна ширина сторінки
+$minWidth: 320;
+//ширина макету
+$maxWidth: 1920;
+//ширина обмежуючого контейнера
+$maxWidthContainer: 1680;
+
+$containerPadding: 30;
+
+//ширина спрацювання першого брейкпойнту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+
+
+//брейк-пойнтти
+//$pc: $containerWidth;//ПК, ноутбуки, деякі планшети у горизонтальному положенні
+
+$pc: 1710;                    // PC, laptops
+$miniDesktop: 1200;          //Small desktops
+$tablet: 991.98;            //Tablets, some phones in landscape orientation
+$mobile: 767.98;           //Phones L  Burger
+$mobileSmall: 479.98;     //Phones S
+
+
+
+
+// Тип адаптива:
+// 1 = чуйність ( у контейнера немає брейкпойнтів)
+// 2 = по брейк-пойнт ( контейнер змінює свою ширину по брейк-пойнт )
+$responsiveType: 1;
+
+
+
+// Змінні для анімації
+$transition-duration: 0.5s;
+$transition-timing: ease;
+$transition-hover: color $transition-duration $transition-timing,
+                   background-color $transition-duration $transition-timing,
+                   border-color $transition-duration $transition-timing;

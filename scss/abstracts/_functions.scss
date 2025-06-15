@@ -1,0 +1,52 @@
+@use 'sass:math';
+@use 'variables' as *;
+
+
+
+
+// Function for changing px into rem
+@function to-rem($value) {
+
+  // Якщо значення має одиниці px - видаляємо їх
+  @if unit($value) == 'px' {
+    $value: math.div($value, 1px);
+  }
+  // Повертаємо rem
+  @return math.div($value, $baseFontSize) * 1rem;
+}
+
+
+//
+//Округлюємо до двох знаків другий параметр для
+//
+@function round-to($number, $digits: 2) {
+  $multiplier: 1;
+  @for $i from 1 through $digits {
+    $multiplier: $multiplier * 10;
+  }
+  @return round($number * $multiplier) / $multiplier;
+}
+
+
+//
+//Вираховуємо динамічний clamp
+//
+@function to-adaptive($min, $max, $minWidth: 768, $maxWidth: 1200) {
+  $slope: ($max - $min) / ($maxWidth - $minWidth) * 100;
+  $rounded-slope: round-to($slope, 2); // округлено до 2 знаків
+  @return clamp(#{$min}px, #{$rounded-slope}vw, #{$max}px);
+}
+
+
+//
+//Пробна формула
+//
+//@function to-adaptive($min, $max, $minWidth: 768, $maxWidth: 1200) {
+//  $slope: ($max - $min) / ($maxWidth - $minWidth);
+//  $y-intercept: $min - $slope * $minWidth; // це було пропущено
+//
+//  $slope-vw: round-to($slope * 100, 3);
+//  $intercept: round-to($y-intercept, 2);
+//
+//  @return clamp(#{$min}px, #{$intercept}px + #{$slope-vw}vw, #{$max}px);
+//}

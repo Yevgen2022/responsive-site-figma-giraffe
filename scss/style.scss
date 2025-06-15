@@ -1,0 +1,25 @@
+
+// Імпортуємо abstracts ГЛОБАЛЬНО (з as *)
+@use 'abstracts' as *;
+
+// Імпортуємо решту директорій
+@use 'vendors';
+@use 'base';
+@use 'layout';
+@use 'components' as *;
+@use 'pages';
+
+
+//@import 'abstracts/fonts';
+//
+//@import "abstracts/functions";
+//@import 'abstracts/variables';
+//@import 'base/reset';
+//@import 'base/typography';
+//@import 'base/global';
+
+
+
+
+
+

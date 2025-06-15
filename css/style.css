@@ -1,0 +1,248 @@
+/* _reset.scss */
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins */
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+figure, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles */
+ul[role=list],
+ol[role=list],
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* Remove default anchor styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set image defaults */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove form styles */
+input, button, textarea, select {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Remove animations/transitions for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  min-width: 320px;
+  color: #000000;
+  font-family: "LibreBaskerville", sans;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #FFFFFF;
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  background-color: #DF803E;
+}
+
+.bounding-box {
+  max-width: 105rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main {
+  flex: 1;
+}
+
+.footer {
+  border: 2px solid black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+
+a, button, .nav__item, .btn, [role=button] {
+  transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
+}
+
+.nav {
+  margin: 40px 0 14px 0;
+  width: 100%;
+  max-height: 60px;
+}
+.nav__list {
+  display: inline-flex;
+  gap: 16px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.nav__link {
+  margin: 10px 7px;
+  display: flex;
+  font-size: 26px;
+}
+.nav__link:active {
+  color: #000000;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0 14px 0;
+}
+.icons__item {
+  max-width: 40px;
+  max-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.icons__item:nth-child(2) {
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+@media (max-width: 1200px) {
+  .nav__list {
+    gap: 13px;
+  }
+  .nav__link {
+    font-size: 22px;
+  }
+}
+@media (max-width: 991.98px) {
+  .nav__list {
+    gap: 2px;
+  }
+  .nav__link {
+    font-size: 20px;
+  }
+  .icons__item:nth-child(2) {
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+  .icons__item {
+    max-width: 35px;
+    max-height: 35px;
+  }
+}
+@media (max-width: 891.98px) {
+  .nav__link {
+    font-size: 18px;
+    margin: 10px 6px;
+  }
+}
+@media (max-width: 767.98px) {
+  .nav__list {
+    display: none;
+  }
+  .icons {
+    display: none;
+  }
+}
+.line {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  width: 30px;
+  height: 20px;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 100;
+}
+.burger span {
+  width: 100%;
+  height: 3px;
+  background: black;
+  transition: 0.3s;
+  transform-origin: center;
+}
+.burger span:first-child,
+.burger span:last-child {
+  width: 80%;
+}
+.burger.open span:nth-child(1) {
+  width: 100%;
+  transform: rotate(45deg) translate(0, calc((100% + 5px) * 1.5));
+}
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+.burger.open span:nth-child(3) {
+  width: 100%;
+  transform: rotate(-45deg) translate(0, calc((100% + 5px) * -1.5));
+}
+
+@media (max-width: 767.98px) {
+  .burger {
+    display: flex;
+  }
+}
+.mobile-nav {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

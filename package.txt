@@ -1,0 +1,11 @@
+{
+  "name": "my-landing-project",
+  "version": "1.0.0",
+  "description": "Лендінг з SCSS",
+  "scripts": {
+    "scss": "sass scss/style.scss css/style.css --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}
