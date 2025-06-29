@@ -123,12 +123,10 @@ h1 {
 }
 
 .hero-content {
-  position: relative;
-}
-
-.info-header {
   padding-top: 9.625rem;
   padding-bottom: 20.375rem;
+  display: flex;
+  flex-direction: row;
   border: 1px solid black;
 }
 
@@ -279,14 +277,14 @@ h1 {
   z-index: 100;
 }
 
-.info-header__description {
+.hero-content__description {
   font-size: 3.125rem;
   line-height: 130%;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
   margin: 1.5rem 0 5.6875rem 0;
 }
 
-.info-header__button {
+.hero-content__button {
   background-color: #FFFFFF;
   font-size: 1.625rem;
   padding: 1.25rem 2.625rem;
@@ -295,9 +293,32 @@ h1 {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.info-header__button:active {
+.hero-content__button:active {
   color: #DF803E;
   background-color: #cdc3c3;
+}
+
+.hero-content__image {
+  border: 1px solid black;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content__triangle {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  max-width: 82rem;
+  max-height: 82rem;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+}
+
+.hero-content__triangle img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

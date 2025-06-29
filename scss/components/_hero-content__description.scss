@@ -1,7 +1,7 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/functions' as *;
 
-.info-header__description {
+.hero-content__description {
   font-size: to-rem(50);
   line-height: 130%;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);

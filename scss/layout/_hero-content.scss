@@ -1,0 +1,17 @@
+
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+
+// .info-header{
+//   padding-top: to_rem(154) ;
+//   padding-bottom: to_rem(326) ;
+//   border: 1px solid black;
+// }
+
+.hero-content{
+  padding-top: to_rem(154) ;
+  padding-bottom: to_rem(326) ;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
