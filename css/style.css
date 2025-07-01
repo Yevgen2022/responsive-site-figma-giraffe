@@ -124,11 +124,17 @@ h1 {
 }
 
 .hero-content {
+  position: relative;
+  border-bottom: 1px solid red;
+  margin-bottom: 100px;
+}
+
+.hero-content {
   padding-top: 9.625rem;
   padding-bottom: 20.375rem;
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
+  border: 1px solid red;
 }
 
 .nav {
@@ -302,19 +308,18 @@ h1 {
 
 .hero-content__triangle {
   position: absolute;
-  top: 0px;
-  right: 0px;
-  max-width: 82rem;
-  max-height: 82rem;
-  width: 100%;
-  height: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: clamp(200px, 68.33vw, 1000px);
+  height: 100%;
   z-index: 10;
 }
-
 .hero-content__triangle img {
-  display: block;
+  object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
