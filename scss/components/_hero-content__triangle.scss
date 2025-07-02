@@ -2,24 +2,6 @@
 @use '../abstracts/functions' as *;
 
 
-//.hero-content__triangle {
-//  position: absolute;
-//  top: -180px;
-//  right: -300px;
-//  width: clamp(300px, 68.33vw, 1312px);  // адаптивно, плавно
-//  aspect-ratio: 1 / 1; // зберігає пропорції
-//  //max-width: to_rem(1312);
-//  //max-height: to_rem(1312);
-//  height: auto;
-//  z-index: 10; // якщо потрібно відправити назад
-//}
-//
-//.hero-content__triangle img {
-//  display: block;
-//  width: 100%;
-//  height: auto;
-//}
-
 .hero-content__triangle {
   position: absolute;
   top: to-rem(-270);

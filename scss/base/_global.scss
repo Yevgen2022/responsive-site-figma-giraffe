@@ -1,5 +1,3 @@
-
-
 @use '../abstracts/variables' as *;
 @use '../abstracts/functions' as *;
 
@@ -13,15 +11,21 @@
   position: relative;
 }
 
-.bounding-box{
+.bounding-box {
   width: 100%;
-  max-width: to-rem($maxWidthContainer);
+  //max-width: to-rem($maxWidthContainer);
   //min-width: #{$minWidth}px; // додати мінімальну ширину
+
   margin: 0 auto;
+
+  //padding-left: 120px;
+  //padding-right: 120px;
+
+  padding-inline: clamp(16px, 6vw, 120px);
+
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
 }
 
 .header {
@@ -42,7 +46,7 @@
 }
 
 a {
-  &:hover{
+  &:hover {
     text-decoration: underline;
     color: $bgSecondColor;
   }
@@ -53,7 +57,11 @@ a, button, .nav__item, .btn, [role="button"] {
   transition: $transition-hover;
 }
 
-h1{
-font-family: $font-base-desktop;
+h1 {
+  font-family: $font-base-desktop;
   font-size: to-rem(90);
+}
+
+* {
+  outline: 1px solid red;
 }

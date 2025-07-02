@@ -7,3 +7,24 @@
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
   margin: to-rem(24) 0 to-rem(91) 0;
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//media request
+
+@media(max-width: 1200px) {
+  .hero-content__description {
+    font-size: to-rem(40);
+  }
+}
+
+@media(max-width: 991.98px) {
+  .hero-content__description {
+    font-size: to-rem(35);
+  }
+}
+
+@media(max-width: 767.98px) {
+  .hero-content__description {
+    font-size: to-rem(30);
+  }
+}

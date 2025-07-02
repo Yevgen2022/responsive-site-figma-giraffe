@@ -1,6 +1,11 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/functions' as *;
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//media request
+
+
 @media(max-width: 1200px) {
   .hero-content__title {
     font-size: to-rem(70);
