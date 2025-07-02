@@ -341,4 +341,20 @@ h1 {
   display: block;
 }
 
+@media (max-width: 1200px) {
+  .hero-content__title {
+    font-size: 4.375rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .hero-content__title {
+    font-size: 3.75rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-content__title {
+    font-size: 3.25rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
