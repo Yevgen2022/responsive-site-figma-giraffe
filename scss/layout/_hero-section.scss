@@ -1,5 +1,9 @@
-.hero-content{
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+
+.hero-section{
   position: relative;
+  //container-type: inline-size; // включаємо container queries
+  //min-height: to-rem(600);
   border-bottom: 1px solid red;
-margin-bottom: 100px;
 }

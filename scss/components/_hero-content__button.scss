@@ -1,8 +1,7 @@
-
 @use '../abstracts/variables' as *;
 @use '../abstracts/functions' as *;
 
-.hero-content__button{
+.hero-content__button {
   background-color: $bgSecondColor;
   font-size: to-rem(26);
   padding: to-rem(20) to-rem(42);
@@ -11,9 +10,24 @@
   cursor: pointer;
   transition: all 0.3s ease;
 
-  &:active{
-  color:$bgColor;
+  &:active {
+    color: $bgColor;
     background-color: $activeColor;
+  }
 }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//media request
+
+@media(max-width: 1200px){
+  .hero-content__button{
+    font-size: to-rem(24);
+    padding: to-rem(16) to-rem(38);
+  }
+}
+
+@media(max-width: 991.98px){
+  .hero-content__button{
+    padding: to-rem(12) to-rem(34);
+  }
 }
