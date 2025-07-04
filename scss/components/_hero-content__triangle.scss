@@ -4,7 +4,8 @@
 
 .hero-content__triangle {
   position: absolute;
-  top: to-rem(18);
+  //top: to-rem(18);
+  top: 0;
   right: 0;
   //right: -120px;
 
@@ -12,11 +13,11 @@
 
   //max-width: min(to-rem(1312), 68vw);
   //width: clamp(200px, 68cqw, 1312px); // cqw = container query width
-  height: 1150px; // завжди по висоті секції
+  height: 100%; // завжди по висоті секції
   z-index: 10;
   border: 1px solid red;
   //max-width: to-rem(1600);
-  width: 50%;
+  width: 100%;
   max-width: 50%;
 
 
@@ -25,5 +26,27 @@
     width: 100%;
     height: 100%;
     display: block;
+  }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// media request
+
+@media (max-width: 1349.98px){
+  .hero-content__triangle{
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 1200px){
+  .hero-content__triangle{
+    outline: 2px solid lime;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+
+   transform: rotate(90deg); /* 🔄 Повертаємо */
+    transform-origin: bottom right; /* 📍 Точка обертання */
   }
 }

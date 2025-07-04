@@ -40,6 +40,7 @@
   align-items: center;
   justify-content: center;
   margin: 40px 0 14px 0;
+  padding-right: 85px;
   //flex-shrink: 0;
 
   &__item {
@@ -68,6 +69,10 @@
 
   .nav__link {
     font-size: 22px;
+  }
+
+  .icons{
+    padding-right: 0;
   }
 }
 

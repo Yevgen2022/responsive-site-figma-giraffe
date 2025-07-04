@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* _reset.scss */
 /* Box sizing */
 *,
@@ -168,6 +169,7 @@ h1 {
   align-items: center;
   justify-content: center;
   margin: 40px 0 14px 0;
+  padding-right: 85px;
 }
 .icons__item {
   max-width: 40px;
@@ -187,6 +189,9 @@ h1 {
   }
   .nav__link {
     font-size: 22px;
+  }
+  .icons {
+    padding-right: 0;
   }
 }
 @media (max-width: 991.98px) {
@@ -356,12 +361,12 @@ h1 {
 
 .hero-content__triangle {
   position: absolute;
-  top: 1.125rem;
+  top: 0;
   right: 0;
-  height: 1150px;
+  height: 100%;
   z-index: 10;
   border: 1px solid red;
-  width: 50%;
+  width: 100%;
   max-width: 50%;
 }
 .hero-content__triangle img {
@@ -371,6 +376,23 @@ h1 {
   display: block;
 }
 
+@media (max-width: 1349.98px) {
+  .hero-content__triangle {
+    max-width: 45%;
+  }
+}
+@media (max-width: 1200px) {
+  .hero-content__triangle {
+    outline: 2px solid lime;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    transform: rotate(90deg); /* 🔄 Повертаємо */
+    transform-origin: bottom right; /* 📍 Точка обертання */
+  }
+}
 @media (max-width: 1200px) {
   .hero-content__title {
     font-size: 4.375rem;
