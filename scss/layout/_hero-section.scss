@@ -11,4 +11,12 @@
   border-right: 1px solid blue;
 
   margin-bottom: 100px;
+
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1680px) 1fr;
+  padding-inline: 20px;
+}
+
+.hero-section > * {
+  grid-column: 2;
 }

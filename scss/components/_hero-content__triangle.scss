@@ -4,8 +4,8 @@
 
 .hero-content__triangle {
   position: absolute;
-  top: to-rem(-270);
-  right: to-rem(-122);
+  top: to-rem(18);
+  right: 0;
   //right: -120px;
 
   //width: clamp(300px, 68.33vw, 1100px); // ✅ адаптивна ширина
@@ -17,7 +17,7 @@
   border: 1px solid red;
   //max-width: to-rem(1600);
   width: 50%;
-max-width: 50%;
+  max-width: 50%;
 
 
   img {

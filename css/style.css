@@ -87,15 +87,12 @@ body {
 
 .bounding-box {
   width: 100%;
-  margin: 0 auto;
-  padding-inline: clamp(16px, 6vw, 120px);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 .header {
-  margin: 0 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -123,16 +120,19 @@ h1 {
   font-size: 5.625rem;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 .hero-section {
   position: relative;
   border-bottom: 1px solid blue;
   border-left: 1px solid blue;
   border-right: 1px solid blue;
   margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1680px) 1fr;
+  padding-inline: 20px;
+}
+
+.hero-section > * {
+  grid-column: 2;
 }
 
 .hero-content {
@@ -209,6 +209,14 @@ h1 {
   .nav__link {
     font-size: 18px;
     margin: 10px 6px;
+  }
+  .icons__item {
+    max-width: 30px;
+    max-height: 30px;
+  }
+  .icons__item:nth-child(2) {
+    margin-right: 5px;
+    margin-left: 5px;
   }
 }
 @media (max-width: 767.98px) {
@@ -348,8 +356,8 @@ h1 {
 
 .hero-content__triangle {
   position: absolute;
-  top: -16.875rem;
-  right: -7.625rem;
+  top: 1.125rem;
+  right: 0;
   height: 1150px;
   z-index: 10;
   border: 1px solid red;
