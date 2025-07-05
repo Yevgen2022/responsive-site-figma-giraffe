@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* _reset.scss */
 /* Box sizing */
 *,
@@ -365,7 +364,6 @@ h1 {
   right: 0;
   height: 100%;
   z-index: 10;
-  border: 1px solid red;
   width: 100%;
   max-width: 50%;
 }
@@ -383,14 +381,7 @@ h1 {
 }
 @media (max-width: 1200px) {
   .hero-content__triangle {
-    outline: 2px solid lime;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 50%;
-    transform: rotate(90deg); /* 🔄 Повертаємо */
-    transform-origin: bottom right; /* 📍 Точка обертання */
+    display: none;
   }
 }
 @media (max-width: 1200px) {
