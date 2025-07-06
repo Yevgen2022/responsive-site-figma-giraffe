@@ -1,3 +1,7 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/functions' as *;
+
+
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -13,8 +17,9 @@
 
   display: flex;
   flex-direction: column;
-  padding: 20px;
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+
+  padding: 20px 20px 40px 20px;
 }
 
 .mobile-nav.open {
@@ -55,8 +60,19 @@
   color: #333;
   text-decoration: none;
   font-size: 20px;
+  font-family: $font-base-mobile;
+  font-weight: 400;
   display: block;
   padding: 10px 0;
+
+  &:hover{
+    text-decoration: underline;
+    color: $bgColor;
+  }
+
+  &:active{
+    color: #000000;
+  }
 }
 
 .mobile-nav__footer {
@@ -92,7 +108,9 @@
   opacity: 1;
   visibility: visible;
 }
-
+.mobile-nav__line{
+  border-bottom: 1px solid #DF803E;
+}
 //////////////////////////////////////////////////////////////////////////////////
 
 @media(min-width: 767.98px) {
