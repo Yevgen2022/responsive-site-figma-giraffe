@@ -10,8 +10,13 @@
   cursor: pointer;
   transition: all 0.3s ease;
 
-  &:active {
+ &:hover {
     color: $bgColor;
+    background-color: $bgSecondColor;
+  }
+
+  &:active {
+    color: #5B5A5AFF;
     background-color: $activeColor;
   }
 }

@@ -168,7 +168,6 @@ h1 {
   align-items: center;
   justify-content: center;
   margin: 40px 0 14px 0;
-  padding-right: 85px;
 }
 .icons__item {
   max-width: 40px;
@@ -333,8 +332,12 @@ h1 {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.hero-content__button:active {
+.hero-content__button:hover {
   color: #DF803E;
+  background-color: #FFFFFF;
+}
+.hero-content__button:active {
+  color: #5b5a5a;
   background-color: #cdc3c3;
 }
 
